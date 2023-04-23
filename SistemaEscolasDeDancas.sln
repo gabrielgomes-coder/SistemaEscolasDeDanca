@@ -5,15 +5,15 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolasDeDanca.API", "SistemaEscolasDeDancas\EscolasDeDanca.API.csproj", "{39259094-1B3B-41D2-9C03-D47298B2B20B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TabBlazor.Templates.Server", "TabBlazor.Templates.Server\TabBlazor.Templates.Server.csproj", "{F15F5CEE-F0F6-4EB9-9096-9D78812291CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolasDeDanca.View", "TabBlazor.Templates.Server\EscolasDeDanca.View.csproj", "{F15F5CEE-F0F6-4EB9-9096-9D78812291CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolasDeDanca.Models", "EscolasDeDancaModels\EscolasDeDanca.Models.csproj", "{7F6D5FF7-1EEC-43DA-8D5A-4876EFA42D3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolasDeDanca.Models", "EscolasDeDancaModels\EscolasDeDanca.Models.csproj", "{7F6D5FF7-1EEC-43DA-8D5A-4876EFA42D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolasDeDanca.Tests", "EscolasDeDanca.Tests\EscolasDeDanca.Tests.csproj", "{AC0413EC-CE8D-4AD1-AE33-D8ABA74A531D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolasDeDanca.Tests", "EscolasDeDanca.Tests\EscolasDeDanca.Tests.csproj", "{AC0413EC-CE8D-4AD1-AE33-D8ABA74A531D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolasDeDanca.Repository", "EscolasDeDanca.Repository\EscolasDeDanca.Repository.csproj", "{ADE40AC7-049A-46BF-9121-4CB6C8C2542A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolasDeDanca.Repository", "EscolasDeDanca.Repository\EscolasDeDanca.Repository.csproj", "{ADE40AC7-049A-46BF-9121-4CB6C8C2542A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscolasDeDanca.Services", "EscolasDeDanca.Services\EscolasDeDanca.Services.csproj", "{8D437A4B-CD8F-47F9-9918-66B879D82B74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscolasDeDanca.Services", "EscolasDeDanca.Services\EscolasDeDanca.Services.csproj", "{8D437A4B-CD8F-47F9-9918-66B879D82B74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
