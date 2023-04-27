@@ -1,3 +1,5 @@
+using EscolasDeDanca.Repository.AlunosRepositories;
+using EscolasDeDanca.Services.AlunosServices;
 using SistemaEscolasDeDanca.EscolasDeDancas.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+ConfigureServices(builder.Services);
 
 var conStrBuilder = new MySqlConnectionStringBuilder(
         builder.Configuration.GetConnectionString("MySql"));
@@ -46,3 +50,12 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+void ConfigureServices(IServiceCollection services)
+{
+    //AlunosController Injections
+    services.AddTransient<IAlunoService, AlunoService>();
+    services.AddTransient<IAlunoRepository, AlunoRepository>();
+
+
+}
