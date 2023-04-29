@@ -3,6 +3,7 @@
 [Table("tb_modalidades")]
 public class TbModalidades
 {
+    [Key]
     [Column("id_modalidade", TypeName = "int(11)")]
     public int IdModalidade { get; set; }
 

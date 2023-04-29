@@ -3,6 +3,7 @@
 [Table("tb_professores")]
 public partial class Tbprofessores
 {
+    [Key]
     [Column("id_professor", TypeName = "Int(11)")]
     public int IdProfessor { get; set; }
 

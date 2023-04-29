@@ -3,6 +3,7 @@
 [Table("tb_nivel")]
 public partial class TbNivel
 {
+    [Key]
     [Column("id_nivel", TypeName = "int(11)")]
     public int IdNivel { get; set; }
 

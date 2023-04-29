@@ -1,6 +1,5 @@
 using EscolasDeDanca.Repository.AlunosRepositories;
 using EscolasDeDanca.Services.AlunosServices;
-using SistemaEscolasDeDanca.EscolasDeDancas.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,13 +9,14 @@ builder.Services.AddControllers();
 
 ConfigureServices(builder.Services);
 
+
 var conStrBuilder = new MySqlConnectionStringBuilder(
-        builder.Configuration.GetConnectionString("MySql"));
-conStrBuilder.Password = builder.Configuration["ConnectionStringPassword:Intech"];
-var connection = conStrBuilder.ConnectionString;
+    builder.Configuration.GetConnectionString("MySql"));
+conStrBuilder.Password = builder.Configuration["ConnectionPassword:EscolaDanca"];
+var connection = conStrBuilder.ToString(); // Use ToString() aqui
 
 builder.Services.AddDbContext<EscolasDancaContext>(options =>
-options.UseMySQL(connection));
+    options.UseMySQL(connection));
 
 var CorsPolicy = "CorsPolicy";
 builder.Services.AddCors(options =>

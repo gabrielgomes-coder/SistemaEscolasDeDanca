@@ -14,10 +14,10 @@ public partial class Tbturmas
     public string NomeTurma { get; set; }
 
     [Column("horario_inicial", TypeName = "time")]
-    public string HorarioInicial { get; set; }
+    public TimeSpan HorarioInicial { get; set; }
 
     [Column("horario_final", TypeName = "time")]
-    public string HorarioFinal { get; set; }
+    public TimeSpan HorarioFinal { get; set; }
 
     [Column("dias", TypeName = "varchar(100)")]
     public string DiasDaSemana { get; set; }
